@@ -9,6 +9,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+//`argc`和`argv`分别表示命令行参数的数量和参数列表。
+
     std::ifstream is { argv[1] };
     if (! is) {
         std::cerr << "Cannot open the file: " << argv[1] << std::endl;
